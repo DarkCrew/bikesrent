@@ -1,0 +1,81 @@
+@import url('../../variables/Variables.module.scss');
+
+.bikes {
+  padding-top: 120px;
+}
+
+.title {
+  color: var(--color-black);
+  font-family: 'Inter-ExtraBold';
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.bikeCards {
+  padding-top: 40px;
+}
+
+.bikeCard {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.orangePart {
+  display: flex;
+  justify-content: center;
+  background: var(--color-orange);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  img {
+    padding-top: 20px;
+    height: 180px;
+    object-fit: contain;
+  }
+}
+
+.blackPart {
+  background: var(--color-black);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 30px;
+}
+
+.cardTitle {
+  font-family: 'Inter-Medium';
+  font-size: 21px;
+  color: var(--color-white);
+}
+
+.cardSubTitle {
+  font-family: 'Inter-Bold';
+  font-size: 30px;
+  color: var(--color-blue);
+  padding-top: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 50px;
+  font-family: 'Inter-Regular';
+  color: var(--color-white);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btnReservation {
+  margin-top: 50px;
+  padding: 12px 27px;
+  border-radius: 10px;
+  background: var(--color-blue);
+  color: var(--color-white);
+  font-family: 'Inter-Bold';
+  font-size: 16px;
+  text-transform: uppercase;
+}

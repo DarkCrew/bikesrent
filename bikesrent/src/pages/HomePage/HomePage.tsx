@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 
+import Bikes from 'components/Bikes/Bikes';
 import FirstInfo from 'components/FirstInfo/FirstInfo';
 import HowWorks from 'components/HowWorks/HowWorks';
 
@@ -11,6 +12,7 @@ const HomePage = (): ReactElement => {
       <div className={styles.container}>
         <FirstInfo />
         <HowWorks />
+        <Bikes />
       </div>
     </section>
   );
