@@ -1,0 +1,64 @@
+@import url('../../variables/Variables.module.scss');
+
+.firstInfo {
+  background: var(--color-orange);
+  padding: 45px 0 60px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Inter-ExtraBold';
+  font-size: 92px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.descriptions {
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.description {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter-Regular';
+  font-size: 14px;
+  color: var(--color-white);
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.buttons {
+  display: flex;
+  padding-top: 60px;
+  gap: 30px;
+}
+
+.buttonRegistration,
+.buttonCheck {
+  min-width: 260px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Inter-Bold';
+  text-transform: uppercase;
+  padding: 17px 0;
+  border: 2px solid var(--color-gray);
+}
+.buttonRegistration {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+.buttonCheck {
+  color: var(--color-black);
+  background: var(--color-white);
+}

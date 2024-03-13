@@ -1,0 +1,100 @@
+@import url('../../variables/Variables.module.scss');
+
+.howWorks {
+  background: var(--color-white);
+  padding-top: 170px;
+}
+
+.container {
+  display: flex;
+  height: 470px;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.titleFirst {
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+  font-size: 24px;
+}
+
+.titleSecond {
+  color: var(--color-white);
+  font-family: 'Inter-ExtraBold';
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.orangeLine {
+  position: absolute;
+  height: 364px;
+  width: 100vw;
+  background: var(--color-orange);
+  right: 50px;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.imgBike {
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+
+  img {
+    height: 388px;
+    object-fit: contain;
+  }
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.step {
+  display: flex;
+  height: 330px;
+  width: 350px;
+  flex-direction: column;
+  background: var(--color-black);
+  padding: 30px;
+  border-radius: 25px;
+
+  .stepTitle {
+    color: var(--color-white);
+    font-family: 'Inter-Regular';
+    font-size: 24px;
+    padding-bottom: 25px;
+  }
+
+  .stepSubTitle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-bottom: 20px;
+  }
+
+  .point {
+    color: var(--color-orange);
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+  }
+
+  p {
+    color: var(--color-white);
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+  }
+}
