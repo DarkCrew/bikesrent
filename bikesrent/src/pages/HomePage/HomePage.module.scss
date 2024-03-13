@@ -1,0 +1,10 @@
+@import url('../../variables/Variables.module.scss');
+
+.home {
+  background: var(--color-orange);
+}
+
+.container {
+  min-height: 100vh;
+  padding: 40px 0;
+}
