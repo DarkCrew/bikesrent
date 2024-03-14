@@ -1,0 +1,106 @@
+@import url('../../variables/Variables.module.scss');
+
+.question {
+  background: var(--color-white);
+  padding-top: 170px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.titleFirst {
+  color: var(--color-white);
+  font-family: 'Inter-Regular';
+  font-size: 24px;
+}
+
+.titleSecond {
+  color: var(--color-black);
+  font-family: 'Inter-ExtraBold';
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.orangeLine {
+  position: absolute;
+  height: 364px;
+  width: 100vw;
+  background: var(--color-orange);
+  right: 50px;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.imgBike {
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  img {
+    margin-top: 55px;
+    height: 388px;
+    object-fit: contain;
+  }
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.step {
+  display: flex;
+  width: 730px;
+  flex-direction: column;
+  gap: 42px;
+  background: var(--color-black);
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.stepTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepQuestion {
+  font-family: 'Inter-Bold';
+  font-size: 24px;
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
+
+.plus {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+}
+
+.description {
+  font-family: 'Inter-Regular';
+  font-size: 14px;
+  color: var(--color-white);
+}
