@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 
+import Advantages from 'components/Advantages/Advantages';
 import Bikes from 'components/Bikes/Bikes';
 import FirstInfo from 'components/FirstInfo/FirstInfo';
 import HowWorks from 'components/HowWorks/HowWorks';
@@ -14,6 +15,7 @@ const HomePage = (): ReactElement => {
         <FirstInfo />
         <HowWorks />
         <Bikes />
+        <Advantages />
         <Question />
       </div>
     </section>
