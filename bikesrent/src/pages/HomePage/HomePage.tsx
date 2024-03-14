@@ -4,6 +4,7 @@ import Advantages from 'components/Advantages/Advantages';
 import Bikes from 'components/Bikes/Bikes';
 import Business from 'components/Business/Business';
 import FirstInfo from 'components/FirstInfo/FirstInfo';
+import Footer from 'components/Footer/Footer';
 import HowWorks from 'components/HowWorks/HowWorks';
 import Question from 'components/Question/Question';
 
@@ -19,6 +20,7 @@ const HomePage = (): ReactElement => {
         <Advantages />
         <Question />
         <Business />
+        <Footer />
       </div>
     </section>
   );
