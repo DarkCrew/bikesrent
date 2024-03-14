@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 
 import Advantages from 'components/Advantages/Advantages';
 import Bikes from 'components/Bikes/Bikes';
+import Business from 'components/Business/Business';
 import FirstInfo from 'components/FirstInfo/FirstInfo';
 import HowWorks from 'components/HowWorks/HowWorks';
 import Question from 'components/Question/Question';
@@ -17,6 +18,7 @@ const HomePage = (): ReactElement => {
         <Bikes />
         <Advantages />
         <Question />
+        <Business />
       </div>
     </section>
   );

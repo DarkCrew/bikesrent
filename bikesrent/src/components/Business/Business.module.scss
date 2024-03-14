@@ -1,0 +1,64 @@
+@import url('../../variables/Variables.module.scss');
+
+.business {
+  position: relative;
+  background: var(--color-white);
+  padding-top: 170px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  padding-left: 40px;
+}
+
+.titleFirst {
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.titleSecond {
+  color: var(--color-black);
+  font-family: 'Inter-ExtraBold';
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.background {
+  position: absolute;
+  height: 500px;
+  z-index: 2;
+  object-fit: contain;
+  right: 0;
+}
+
+.orangeLine {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background: var(--color-orange);
+  left: 0;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.description {
+  padding-top: 40px;
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+  font-size: 18px;
+}
