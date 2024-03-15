@@ -11,7 +11,7 @@
   width: 70%;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 .containerHeader {
@@ -19,6 +19,7 @@
   justify-content: space-between;
   position: relative;
   padding: 20px 0;
+  padding-right: 50px;
   font-family: 'Inter-Medium';
 }
 
@@ -66,7 +67,7 @@
 
 .menu {
   display: flex;
-  gap: 0 25px;
+  gap: 0 20px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--color-white);
@@ -121,11 +122,11 @@
   display: flex;
   align-items: center;
   height: 800px;
-  right: 230px;
+  right: 130px;
   position: absolute;
 
   img {
-    height: 500px;
+    height: 40%;
     border-radius: 50px;
     object-fit: contain;
   }
@@ -133,8 +134,9 @@
 
 .footer {
   display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
   position: relative;
-  gap: 190px;
   padding-bottom: 50px;
 
   p,
@@ -146,5 +148,69 @@
 
   p a {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1280px) {
+  .containerHeader {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts,
+  .contacts a {
+    font-size: 32px;
+    padding-top: 80px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .orangeLine {
+    right: 250px;
+  }
+
+  .container,
+  .orangeLine,
+  .maps {
+    height: 600px;
+  }
+
+  .messangers {
+    height: 50px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .maps {
+    right: 30px;
+  }
+
+  .orangeLine {
+    right: 130px;
+  }
+
+  .contacts,
+  .contacts a {
+    font-size: 24px;
+  }
+
+  .container {
+    padding-left: 20px;
   }
 }

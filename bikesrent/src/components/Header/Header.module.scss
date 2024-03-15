@@ -79,3 +79,22 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+
+  .contacts {
+    flex-direction: row;
+    order: 2;
+  }
+}

@@ -62,3 +62,15 @@
   color: var(--color-black);
   background: var(--color-white);
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 76px;
+  }
+
+  .buttonRegistration,
+  .buttonCheck {
+    min-width: 220px;
+    font-size: 17px;
+  }
+}

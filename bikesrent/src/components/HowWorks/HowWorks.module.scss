@@ -98,3 +98,41 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 1280px) {
+  .container,
+  .orangeLine {
+    height: 570px;
+  }
+
+  .imgBike {
+    position: absolute;
+    left: -40px;
+    height: 100%;
+
+    img {
+      transform: scale(-1, 1);
+    }
+  }
+
+  .steps {
+    flex-direction: column;
+    align-self: auto;
+    margin-top: 30px;
+  }
+
+  .step {
+    height: auto;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howWorks {
+    padding-top: 80px;
+  }
+
+  .title {
+    padding-left: 0;
+  }
+}

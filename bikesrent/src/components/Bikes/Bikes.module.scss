@@ -79,3 +79,9 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+@media (max-width: 1024px) {
+  .bikes {
+    padding-top: 80px;
+  }
+}
