@@ -85,3 +85,21 @@
     padding-top: 80px;
   }
 }
+
+@media (max-width: 728px) {
+  .bikes {
+    padding-top: 240px;
+  }
+
+  .bikeCard {
+    width: 300px;
+  }
+
+  .blackPart {
+    padding: 20px;
+  }
+
+  .cardSubTitle {
+    font-size: 28px;
+  }
+}

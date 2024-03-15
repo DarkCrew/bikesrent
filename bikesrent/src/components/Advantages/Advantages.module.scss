@@ -96,6 +96,7 @@
   .background {
     width: 80%;
     object-fit: cover;
+    opacity: 0.3;
   }
 
   .titleFirst {
@@ -104,5 +105,19 @@
 
   .titleSecond {
     font-size: 36px;
+  }
+
+  .title {
+    z-index: 100;
+  }
+
+  .orangeLine {
+    left: 20px;
+  }
+}
+
+@media (max-width: 728px) {
+  .background {
+    width: 100%;
   }
 }

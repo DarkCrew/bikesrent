@@ -214,3 +214,61 @@
     padding-left: 20px;
   }
 }
+
+@media (max-width: 728px) {
+  .howWorks {
+    padding-top: 70px;
+  }
+
+  .orangeLine {
+    right: 30px;
+    height: 550px;
+  }
+
+  .container {
+    height: 550px;
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .maps {
+    position: static;
+    z-index: 10;
+    height: 150px;
+    justify-content: flex-end;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .contacts,
+  .contacts a {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+
+  .city {
+    padding-top: 40px;
+  }
+
+  .messangers {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+    padding: 20px 0;
+
+    p,
+    p a {
+      width: 46%;
+      font-size: 10px;
+    }
+  }
+}

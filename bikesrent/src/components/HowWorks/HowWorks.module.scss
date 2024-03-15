@@ -136,3 +136,22 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 728px) {
+  .imgBike {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .steps {
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  .step {
+    width: 80%;
+    align-self: flex-end;
+  }
+}

@@ -71,13 +71,28 @@
   .background {
     width: 80%;
     object-fit: cover;
+    opacity: 0.3;
   }
 
   .titleFirst {
     font-size: 20px;
   }
 
+  .title {
+    z-index: 100;
+  }
+
   .titleSecond {
     font-size: 36px;
+  }
+
+  .orangeLine {
+    left: 20px;
+  }
+}
+
+@media (max-width: 728px) {
+  .background {
+    width: 100%;
   }
 }
