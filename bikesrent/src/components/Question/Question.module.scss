@@ -103,4 +103,10 @@
   font-family: 'Inter-Regular';
   font-size: 14px;
   color: var(--color-white);
+  transition: 0.5s;
+}
+
+.descriptionOff {
+  transition: 0.5s;
+  display: none;
 }

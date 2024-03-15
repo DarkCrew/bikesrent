@@ -6,7 +6,7 @@ import styles from './HowWorks.module.scss';
 
 const HowWorks = (): ReactElement => {
   return (
-    <div className={styles.howWorks}>
+    <div className={styles.howWorks} id="service">
       <div className="container">
         <div className={styles.container}>
           <div className={styles.orangeLine} />

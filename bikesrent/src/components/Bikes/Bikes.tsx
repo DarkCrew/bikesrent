@@ -6,7 +6,7 @@ import styles from './Bikes.module.scss';
 
 const Bikes = (): ReactElement => {
   return (
-    <div className={styles.bikes}>
+    <div className={styles.bikes} id="bikes">
       <div className="container">
         <p className={styles.title}>Велосипеды</p>
         <div className={styles.bikeCards}>

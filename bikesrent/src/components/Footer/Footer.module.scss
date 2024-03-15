@@ -57,6 +57,11 @@
 
 .logo {
   cursor: pointer;
+
+  img {
+    height: 49px;
+    object-fit: contain;
+  }
 }
 
 .menu {
@@ -65,9 +70,11 @@
   font-size: 14px;
   text-transform: uppercase;
   color: var(--color-white);
+  z-index: 100;
 
-  li {
+  li a {
     display: flex;
+    height: 100%;
     align-items: center;
     color: var(--color-white);
     transition: 0.5s;
@@ -84,7 +91,8 @@
   flex-direction: column;
 }
 
-.contacts {
+.contacts,
+.contacts a {
   color: var(--color-white);
   font-family: 'Inter-ExtraBold';
   font-size: 48px;
@@ -101,11 +109,11 @@
 .messangers {
   margin: 70px 0;
   height: 100px;
-  cursor: pointer;
 
   img {
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
   }
 }
 
@@ -129,10 +137,14 @@
   gap: 190px;
   padding-bottom: 50px;
 
-  p {
+  p,
+  p a {
     color: var(--color-black);
     font-family: 'Inter-Medium';
     font-size: 14px;
+  }
+
+  p a {
     cursor: pointer;
   }
 }

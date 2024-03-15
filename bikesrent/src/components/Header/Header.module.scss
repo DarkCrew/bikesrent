@@ -18,6 +18,11 @@
 
 .logo {
   cursor: pointer;
+
+  img {
+    height: 49px;
+    object-fit: contain;
+  }
 }
 
 .menu {
@@ -27,14 +32,14 @@
   text-transform: uppercase;
   color: var(--color-white);
 
-  li {
+  li a {
     display: flex;
     align-items: center;
     color: var(--color-white);
     transition: 0.5s;
     cursor: pointer;
   }
-  li:hover {
+  li a:hover {
     opacity: 0.7;
   }
 }
@@ -62,6 +67,10 @@
   }
   .contactsBtn:hover {
     background: var(--color-gray);
+  }
+
+  a {
+    height: 100%;
   }
 
   .contactsPhone {
