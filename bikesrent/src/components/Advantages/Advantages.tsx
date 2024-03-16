@@ -6,7 +6,7 @@ import styles from './Advantages.module.scss';
 
 const Advantages = (): ReactElement => {
   return (
-    <div className={styles.advantage}>
+    <div className={styles.advantage} id="advantages">
       <img className={styles.background} src={background} alt="bike" />
       <div className="container">
         <div className={styles.container}>

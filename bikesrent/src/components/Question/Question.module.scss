@@ -130,14 +130,7 @@
   }
 
   .imgBike {
-    position: absolute;
-    left: -40px;
-    height: 100%;
-
-    img {
-      margin-top: auto;
-      transform: scale(-1, 1);
-    }
+    margin-top: 150px;
   }
 }
 
@@ -169,20 +162,20 @@
 
 @media (max-width: 728px) {
   .imgBike {
-    left: auto;
+    position: absolute;
     right: -10px;
+    margin-top: 0;
   }
 
   .imgBike img {
     margin-top: 0;
-    transform: scale(1, 1);
   }
   .step {
     width: 100%;
   }
 
   .steps {
-    width: 70%;
-    padding-top: 230px;
+    width: 90%;
+    padding-top: 300px;
   }
 }

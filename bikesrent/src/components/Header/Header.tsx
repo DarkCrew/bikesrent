@@ -33,13 +33,10 @@ const Header = (): ReactElement => {
               <a href="/#service">О сервисе</a>
             </li>
             <li className="li" onClick={changeBurgerStatus}>
-              <a>Каталог</a>
+              <a href="/#advantages">Аренда</a>
             </li>
             <li className="li" onClick={changeBurgerStatus}>
-              <a>Аренда</a>
-            </li>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#bikes">Наши байки</a>
+              <a href="/#bikes">Наши велосипеды</a>
             </li>
             <li className="li" onClick={changeBurgerStatus}>
               <a href="/#question">Вопрос-ответ</a>

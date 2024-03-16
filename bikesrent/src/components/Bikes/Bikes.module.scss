@@ -23,13 +23,16 @@
 
 .orangePart {
   display: flex;
+  position: relative;
+  height: 180px;
   justify-content: center;
   background: var(--color-orange);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 
   img {
-    padding-top: 20px;
+    top: 25px;
+    position: absolute;
     height: 180px;
     object-fit: contain;
   }
@@ -87,10 +90,6 @@
 }
 
 @media (max-width: 728px) {
-  .bikes {
-    padding-top: 240px;
-  }
-
   .title {
     text-align: center;
   }

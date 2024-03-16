@@ -12,16 +12,16 @@ const Business = (): ReactElement => {
         <div className={styles.container}>
           <div className={styles.orangeLine} />
           <div className={styles.title}>
-            <h3 className={styles.titleFirst}>БИЗНЕСУ</h3>
+            <h3 className={styles.titleFirst}>Для бизнеса</h3>
             <h3 className={styles.titleSecond}>
               Хотите арендовать
               <br /> для своего бизнеса?
             </h3>
             <p className={styles.description}>
               Узнайте о возможностях быстро организовать
-              <br /> свой парк велосипедов и электросамокатов с <br /> сервисом ElectricGO. Для
-              курьерских служб,
-              <br /> кафе, интернет-магазинов и любого бизнеса.
+              <br /> свой парк велосипедов с сервисом ElectricGO.
+              <br /> Для курьерских служб, кафе,
+              <br /> интернет-магазинов и любого бизнеса.
             </p>
           </div>
         </div>

@@ -22,6 +22,7 @@ const HowWorks = (): ReactElement => {
           </div>
           <div className={styles.steps}>
             <div className={styles.step}>
+              <p className={styles.number}>01</p>
               <p className={styles.stepTitle}>Оформите подписку</p>
               <div className={styles.stepSubTitle}>
                 <p className={styles.point}>•</p>
@@ -41,6 +42,7 @@ const HowWorks = (): ReactElement => {
               </div>
             </div>
             <div className={styles.step}>
+              <p className={styles.number}>02</p>
               <p className={styles.stepTitle}>Получите байк</p>
               <div className={styles.stepSubTitle}>
                 <p className={styles.point}>•</p>
