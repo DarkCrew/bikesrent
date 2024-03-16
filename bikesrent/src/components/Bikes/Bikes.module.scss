@@ -91,6 +91,15 @@
     padding-top: 240px;
   }
 
+  .title {
+    text-align: center;
+  }
+
+  .bikeCards {
+    display: flex;
+    justify-content: center;
+  }
+
   .bikeCard {
     width: 300px;
   }

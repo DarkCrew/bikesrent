@@ -84,6 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .stepQuestion {
@@ -99,16 +100,28 @@
   object-fit: contain;
 }
 
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .description {
   font-family: 'Inter-Regular';
   font-size: 14px;
   color: var(--color-white);
-  transition: 0.5s;
+  animation: open 1s;
 }
 
 .descriptionOff {
-  transition: 0.5s;
   display: none;
+  animation: open 1s;
 }
 
 @media (max-width: 1280px) {
@@ -169,6 +182,7 @@
   }
 
   .steps {
+    width: 70%;
     padding-top: 230px;
   }
 }

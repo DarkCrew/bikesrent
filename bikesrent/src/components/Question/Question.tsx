@@ -1,15 +1,25 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { ReactElement } from 'react';
 
 import bike from '../../assets/images/bikeWork.png';
-import plus from '../../assets/images/plus.png';
 
+import './Question.css';
 import styles from './Question.module.scss';
 
 const Question = (): ReactElement => {
-  const [currentInfo, serCurrentInfo] = React.useState(0);
+  const [currentInfo, setCurrentInfo] = React.useState(0);
+
+  const changeDescriptionStatus = (info: number): void => {
+    if (info === currentInfo) {
+      setCurrentInfo(0);
+    } else {
+      setCurrentInfo(info);
+    }
+  };
 
   return (
     <div className={styles.question} id="question">
@@ -31,12 +41,14 @@ const Question = (): ReactElement => {
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
                   <p className={styles.stepQuestion}>Как работает подписка</p>
-                  <img
-                    onClick={() => serCurrentInfo(1)}
-                    className={styles.plus}
-                    src={plus}
-                    alt="plus"
-                  />
+                  <div
+                    className={currentInfo === 1 ? 'plusBtnContainer active' : 'plusBtnContainer'}
+                    onClick={() => changeDescriptionStatus(1)}
+                  >
+                    <label className="plusBtn">
+                      <span className={currentInfo === 1 ? 'plusIcon active' : 'plusIcon'} />
+                    </label>
+                  </div>
                 </div>
                 <p className={currentInfo === 1 ? styles.description : styles.descriptionOff}>
                   Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
@@ -52,12 +64,14 @@ const Question = (): ReactElement => {
                     Как мне оформить
                     <br /> подписку?
                   </p>
-                  <img
-                    onClick={() => serCurrentInfo(2)}
-                    className={styles.plus}
-                    src={plus}
-                    alt="plus"
-                  />
+                  <div
+                    className={currentInfo === 2 ? 'plusBtnContainer active' : 'plusBtnContainer'}
+                    onClick={() => changeDescriptionStatus(2)}
+                  >
+                    <label className="plusBtn">
+                      <span className={currentInfo === 2 ? 'plusIcon active' : 'plusIcon'} />
+                    </label>
+                  </div>
                 </div>
                 <p className={currentInfo === 2 ? styles.description : styles.descriptionOff}>
                   Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
@@ -71,12 +85,14 @@ const Question = (): ReactElement => {
                     Кто может оформить
                     <br /> подписку?
                   </p>
-                  <img
-                    onClick={() => serCurrentInfo(3)}
-                    className={styles.plus}
-                    src={plus}
-                    alt="plus"
-                  />
+                  <div
+                    className={currentInfo === 3 ? 'plusBtnContainer active' : 'plusBtnContainer'}
+                    onClick={() => changeDescriptionStatus(3)}
+                  >
+                    <label className="plusBtn">
+                      <span className={currentInfo === 3 ? 'plusIcon active' : 'plusIcon'} />
+                    </label>
+                  </div>
                 </div>
                 <p className={currentInfo === 3 ? styles.description : styles.descriptionOff}>
                   Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
@@ -87,12 +103,14 @@ const Question = (): ReactElement => {
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
                   <p className={styles.stepQuestion}>Что входит в подписку?</p>
-                  <img
-                    onClick={() => serCurrentInfo(4)}
-                    className={styles.plus}
-                    src={plus}
-                    alt="plus"
-                  />
+                  <div
+                    className={currentInfo === 4 ? 'plusBtnContainer active' : 'plusBtnContainer'}
+                    onClick={() => changeDescriptionStatus(4)}
+                  >
+                    <label className="plusBtn">
+                      <span className={currentInfo === 4 ? 'plusIcon active' : 'plusIcon'} />
+                    </label>
+                  </div>
                 </div>
                 <p className={currentInfo === 4 ? styles.description : styles.descriptionOff}>
                   Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
@@ -107,12 +125,14 @@ const Question = (): ReactElement => {
                     <br /> необходимы для
                     <br /> оформления?
                   </p>
-                  <img
-                    onClick={() => serCurrentInfo(5)}
-                    className={styles.plus}
-                    src={plus}
-                    alt="plus"
-                  />
+                  <div
+                    className={currentInfo === 5 ? 'plusBtnContainer active' : 'plusBtnContainer'}
+                    onClick={() => changeDescriptionStatus(5)}
+                  >
+                    <label className="plusBtn">
+                      <span className={currentInfo === 5 ? 'plusIcon active' : 'plusIcon'} />
+                    </label>
+                  </div>
                 </div>
                 <p className={currentInfo === 5 ? styles.description : styles.descriptionOff}>
                   Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
