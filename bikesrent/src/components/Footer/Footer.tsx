@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-undef */
 import React, { ReactElement } from 'react';
@@ -19,7 +21,7 @@ const Footer = (): ReactElement => {
       <div className={styles.container}>
         <div className={styles.orangeLine} />
         <div className={styles.containerHeader}>
-          <div className={styles.logo}>
+          <div className={styles.logo} onClick={scrollToTop}>
             <img src={logo} alt="alectric-go" />
           </div>
           <ul className={styles.menu}>

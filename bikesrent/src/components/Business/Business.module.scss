@@ -36,6 +36,10 @@
   font-family: 'Inter-ExtraBold';
   font-size: 46px;
   text-transform: uppercase;
+
+  span {
+    color: var(--color-white);
+  }
 }
 
 .background {

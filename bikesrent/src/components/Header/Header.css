@@ -1,3 +1,15 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-orange);
+  z-index: 1000;
+  transition: 1s;
+}
+
+.header.active {
+  background-color: var(--color-darkorange);
+}
+
 .burgerMenu {
   display: none;
   position: relative;
@@ -72,6 +84,16 @@
   }
 }
 
+.logoMobile {
+  display: none;
+  cursor: pointer;
+
+  img {
+    height: 49px;
+    object-fit: contain;
+  }
+}
+
 @media (max-width: 1024px) {
   .menu {
     width: 100%;
@@ -90,22 +112,64 @@
     position: fixed;
   }
 
+  .mobileMenu {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    height: 100vh;
+    width: 70%;
+    background: var(--color-orange);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoMobile {
+    display: block;
+  }
+
   .menu {
     display: none;
-    position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    background: var(--color-black);
     z-index: 1000;
+    order: 1;
   }
 
   .menu.active {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .blackBack {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    top: 0;
     left: 0;
+    opacity: 0.6;
+  }
+
+  .menu {
+    li a {
+      color: var(--color-black);
+    }
+  }
+
+  .blackBack.active {
+    display: block;
   }
 }

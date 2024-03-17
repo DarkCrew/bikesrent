@@ -1,12 +1,5 @@
 @import url('../../variables/Variables.module.scss');
 
-.header {
-  position: sticky;
-  top: 0;
-  background-color: var(--color-orange);
-  z-index: 1000;
-}
-
 .container {
   display: flex;
   height: 90px;
@@ -61,6 +54,22 @@
   }
 }
 
+.li {
+  display: flex;
+  gap: 10px;
+}
+
+.point {
+  display: none;
+  color: var(--color-white);
+  font-family: 'Inter-Regular';
+  font-size: 16px;
+}
+
+.otherInfo {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .container {
     height: auto;
@@ -74,7 +83,7 @@
   }
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
   .container {
     gap: initial;
   }
@@ -90,6 +99,52 @@
     gap: 5px;
     .contactsBtn {
       font-size: 10px;
+    }
+  }
+
+  .point {
+    display: block;
+  }
+
+  .li:first-child {
+    margin-top: 60px;
+  }
+
+  .otherInfoHeader {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    order: 2;
+  }
+
+  .contactsHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    order: 1;
+    p,
+    a {
+      color: var(--color-white);
+      font-family: 'Inter-Bold';
+      font-size: 20px;
+    }
+  }
+
+  .cityHeader {
+    order: 2;
+    color: var(--color-white);
+    font-family: 'Inter-Bold';
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .messangersHeader {
+    order: 3;
+    margin-top: 30px;
+
+    img {
+      height: 40px;
     }
   }
 }

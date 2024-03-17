@@ -7,7 +7,7 @@ import styles from './FirstInfo.module.scss';
 
 const FirstInfo = (): ReactElement => {
   return (
-    <div className={styles.firstInfo}>
+    <div className={styles.firstInfo} id="firstInfo">
       <div className="container">
         <div className={styles.container}>
           <h2 className={styles.title}>

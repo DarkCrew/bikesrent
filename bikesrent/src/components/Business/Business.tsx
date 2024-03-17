@@ -14,7 +14,7 @@ const Business = (): ReactElement => {
           <div className={styles.title}>
             <h3 className={styles.titleFirst}>Для бизнеса</h3>
             <h3 className={styles.titleSecond}>
-              Хотите арендовать
+              Хотите <span>арендовать</span>
               <br /> для своего бизнеса?
             </h3>
             <p className={styles.description}>

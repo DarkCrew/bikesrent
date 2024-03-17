@@ -4,10 +4,11 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { ReactElement } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
+import telegram from '../../assets/images/telegram.png';
 
 import './Header.css';
 import styles from './Header.module.scss';
@@ -15,36 +16,82 @@ import styles from './Header.module.scss';
 const Header = (): ReactElement => {
   const [burgerStatus, setBurgerStatus] = React.useState('menuIcon');
   const [menuStatus, setMenuStatus] = React.useState('menu');
+  const [blackBack, setBlackBack] = React.useState('blackBack');
+  const [orangeBack, setOrangeBack] = React.useState('mobileMenu');
+  const [logoMobile, setLogoMobile] = React.useState('logoMobile');
+  const [headerBack, setHeaderBack] = React.useState('header');
+
+  const scrollTop = (): void => {
+    window.scrollTo(0, 0);
+  };
+
+  const [scroll, setScroll] = React.useState(0);
+  const handleScroll = (): void => {
+    setScroll(window.scrollY);
+  };
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const changeBurgerStatus = (): void => {
     burgerStatus === 'menuIcon' ? setBurgerStatus('menuIcon active') : setBurgerStatus('menuIcon');
     menuStatus === 'menu' ? setMenuStatus('menu active') : setMenuStatus('menu');
+    blackBack === 'blackBack' ? setBlackBack('blackBack active') : setBlackBack('blackBack');
+    orangeBack === 'mobileMenu' ? setOrangeBack('mobileMenu active') : setOrangeBack('mobileMenu');
+    logoMobile === 'logoMobile' ? setLogoMobile('logoMobile active') : setLogoMobile('logoMobile');
+  };
+
+  const clickMobileLogo = (): void => {
+    scrollTop();
+    changeBurgerStatus();
   };
 
   return (
-    <div className={styles.header}>
+    <div className={+scroll > 100 ? 'header active' : 'header'}>
       <div className="container">
         <div className={styles.container}>
-          <NavLink to="/" className={styles.logo}>
+          <NavLink to="/" className={styles.logo} onClick={scrollTop}>
             <img src={logo} alt="alectric-go" />
           </NavLink>
-          <ul className={menuStatus}>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#service">О сервисе</a>
-            </li>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#advantages">Аренда</a>
-            </li>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#bikes">Наши велосипеды</a>
-            </li>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#question">Вопрос-ответ</a>
-            </li>
-            <li className="li" onClick={changeBurgerStatus}>
-              <a href="/#contacts">Контакты</a>
-            </li>
-          </ul>
+          <div className={orangeBack}>
+            <NavLink to="/" className={logoMobile} onClick={clickMobileLogo}>
+              <img src={logo} alt="alectric-go" />
+            </NavLink>
+            <ul className={menuStatus}>
+              <li className={styles.li} onClick={changeBurgerStatus}>
+                <span className={styles.point}>•</span>
+                <a href="/#service">О сервисе</a>
+              </li>
+              <li className={styles.li} onClick={changeBurgerStatus}>
+                <span className={styles.point}>•</span>
+                <a href="/#advantages">Аренда</a>
+              </li>
+              <li className={styles.li} onClick={changeBurgerStatus}>
+                <span className={styles.point}>•</span>
+                <a href="/#bikes">Наши велосипеды</a>
+              </li>
+              <li className={styles.li} onClick={changeBurgerStatus}>
+                <span className={styles.point}>•</span>
+                <a href="/#question">Вопрос-ответ</a>
+              </li>
+              <li className={styles.li} onClick={changeBurgerStatus}>
+                <span className={styles.point}>•</span>
+                <a href="/#contacts">Контакты</a>
+              </li>
+            </ul>
+            <div className={styles.otherInfoHeader}>
+              <p className={styles.contactsHeader}>
+                <a href="tel:+48888768666">+48 888 768 666</a>
+                <p>biuro@electricgo.pl</p>
+              </p>
+              <div className={styles.cityHeader}>Warszawa</div>
+              <div className={styles.messangersHeader}>
+                <img src={telegram} alt="telegram" />
+              </div>
+            </div>
+          </div>
+          <div className={blackBack} />
           <div className={styles.contacts}>
             <button type="button" className={styles.contactsBtn}>
               портал клиента

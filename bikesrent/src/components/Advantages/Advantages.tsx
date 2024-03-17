@@ -13,7 +13,9 @@ const Advantages = (): ReactElement => {
           <div className={styles.orangeLine} />
           <div className={styles.title}>
             <h3 className={styles.titleFirst}>преимущества</h3>
-            <h3 className={styles.titleSecond}>для курьера</h3>
+            <h3 className={styles.titleSecond}>
+              для <span>курьера</span>
+            </h3>
             <div className={styles.step}>
               <div className={styles.stepSubTitle}>
                 <p className={styles.point}>•</p>
