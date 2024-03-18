@@ -48,6 +48,22 @@ const Footer = (): ReactElement => {
             <p>biuro@electricgo.pl</p>
           </p>
           <div className={styles.city}>Warszawa</div>
+          <a
+            target="_blank"
+            href="https://maps.app.goo.gl/tKqz3DiuXSk5XBoD9"
+            className={styles.place}
+            rel="noreferrer"
+          >
+            Garazowa 24, 01-651
+          </a>
+          <a
+            target="_blank"
+            href="https://maps.app.goo.gl/XphKKAMFYywjPAk3A"
+            className={styles.place}
+            rel="noreferrer"
+          >
+            Jadźwingów 15, 02-692
+          </a>
           <div className={styles.messangers}>
             <img src={telegram} alt="telegram" />
           </div>
@@ -55,16 +71,13 @@ const Footer = (): ReactElement => {
         <div className={styles.maps}>
           <div className={styles.mapsContainer}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81217.38946120003!2d20.969164421076982!3d52.25853357999061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471932e098a0fc3d%3A0x9242c27d8dbb719f!2sJad%C5%BAwing%C3%B3w%2016%2C%2002-692%20Warszawa!5e0!3m2!1sru!2spl!4v1710627171112!5m2!1sru!2spl"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1qZiXQLXGKlagDQ6lxJjguPMp1donE4o&ehbc=2E312F&noprof=1"
               className={styles.mapGoogle}
               style={{ border: '0' }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-        </div>
-        <div className={styles.imgBike}>
-          <img src={bike} alt="bike" />
         </div>
 
         <footer className={styles.footer}>

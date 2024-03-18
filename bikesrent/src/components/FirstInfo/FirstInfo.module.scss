@@ -78,6 +78,12 @@
 @media (max-width: 768px) {
   .firstInfo {
     padding: 30px 0;
+    min-height: calc(90vh - 70px);
+  }
+
+  .container {
+    min-height: calc(90vh - 130px);
+    justify-content: space-between;
   }
 
   .title {
@@ -86,29 +92,30 @@
 
   .descriptions {
     flex-direction: column;
-    gap: 40px;
+    gap: 70px;
   }
 
   .description {
-    height: 30px;
-    font-size: 16px;
+    height: 50px;
+    font-size: 24px;
+    gap: 40px;
 
     img {
-      width: 35px;
+      width: 50px;
     }
   }
 
   .buttons {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .buttonRegistration,
   .buttonCheck {
-    max-width: 80%;
-    font-size: 11px;
-    padding: 10px 0;
+    width: 300px;
+    font-size: 20px;
+    padding: 20px 30px;
   }
 }
 
@@ -121,6 +128,10 @@
 @media (max-width: 428px) {
   .title {
     font-size: 45px;
+  }
+
+  .description {
+    font-size: 20px;
   }
 }
 

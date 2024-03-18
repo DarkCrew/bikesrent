@@ -66,14 +66,20 @@
   font-size: 16px;
 }
 
-.otherInfo {
+.otherInfoHeader {
   display: none;
+}
+
+.linksMenu {
+  font-family: 'Inter-Medium';
+  font-size: 16px;
+  color: var(--color-black);
 }
 
 @media (max-width: 1024px) {
   .container {
     height: auto;
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
   }
 

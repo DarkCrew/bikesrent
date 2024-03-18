@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { ReactElement } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
@@ -19,7 +19,6 @@ const Header = (): ReactElement => {
   const [blackBack, setBlackBack] = React.useState('blackBack');
   const [orangeBack, setOrangeBack] = React.useState('mobileMenu');
   const [logoMobile, setLogoMobile] = React.useState('logoMobile');
-  const [headerBack, setHeaderBack] = React.useState('header');
 
   const scrollTop = (): void => {
     window.scrollTo(0, 0);
@@ -55,29 +54,39 @@ const Header = (): ReactElement => {
             <img src={logo} alt="alectric-go" />
           </NavLink>
           <div className={orangeBack}>
-            <NavLink to="/" className={logoMobile} onClick={clickMobileLogo}>
-              <img src={logo} alt="alectric-go" />
-            </NavLink>
+            <div className={logoMobile} onClick={clickMobileLogo}>
+              <img className="logoMobileImg" src={logo} alt="alectric-go" />
+            </div>
             <ul className={menuStatus}>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
-                <a href="/#service">О сервисе</a>
+                <a className={styles.linksMenu} href="/#service">
+                  О сервисе
+                </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
-                <a href="/#advantages">Аренда</a>
+                <a className={styles.linksMenu} href="/#advantages">
+                  Аренда
+                </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
-                <a href="/#bikes">Наши велосипеды</a>
+                <a className={styles.linksMenu} href="/#bikes">
+                  Наши велосипеды
+                </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
-                <a href="/#question">Вопрос-ответ</a>
+                <a className={styles.linksMenu} href="/#question">
+                  Вопрос-ответ
+                </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
-                <a href="/#contacts">Контакты</a>
+                <a className={styles.linksMenu} href="/#contacts">
+                  Контакты
+                </a>
               </li>
             </ul>
             <div className={styles.otherInfoHeader}>
