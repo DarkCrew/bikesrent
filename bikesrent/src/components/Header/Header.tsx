@@ -6,6 +6,7 @@
 import React, { ReactElement } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import languageImage from '../../assets/images/language.png';
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
 import telegram from '../../assets/images/telegram.png';
@@ -101,13 +102,23 @@ const Header = (): ReactElement => {
             </div>
           </div>
           <div className={blackBack} />
-          <div className={styles.contacts}>
-            <button type="button" className={styles.contactsBtn}>
-              портал клиента
-            </button>
-            <a href="tel:+48888768666">
-              <img className={styles.contactsPhone} src={phone} alt="phone" />
-            </a>
+          <div className={styles.settings}>
+            <div className={styles.contacts}>
+              <button type="button" className={styles.contactsBtn}>
+                портал клиента
+              </button>
+              <a href="tel:+48888768666">
+                <img className={styles.contactsPhone} src={phone} alt="phone" />
+              </a>
+            </div>
+            <div className={styles.box}>
+              <img className={styles.boxImg} src={languageImage} alt="language" />
+              <select>
+                <option>En</option>
+                <option>Ru</option>
+                <option>Pl</option>
+              </select>
+            </div>
           </div>
           <div className="burgerMenu" onClick={changeBurgerStatus}>
             <label className="menuBtn">

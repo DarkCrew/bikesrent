@@ -50,11 +50,11 @@ const Footer = (): ReactElement => {
           <div className={styles.city}>Warszawa</div>
           <a
             target="_blank"
-            href="https://maps.app.goo.gl/tKqz3DiuXSk5XBoD9"
+            href="https://maps.app.goo.gl/TnzAMvx3qTjLAxw87"
             className={styles.place}
             rel="noreferrer"
           >
-            Garazowa 24, 01-651
+            Samochodowa 9, 02-652
           </a>
           <a
             target="_blank"

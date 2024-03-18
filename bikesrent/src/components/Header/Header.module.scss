@@ -76,7 +76,52 @@
   color: var(--color-black);
 }
 
-@media (max-width: 1024px) {
+.box {
+  display: flex;
+  width: 110px;
+  height: 40px;
+  background-color: var(--color-black);
+  border-radius: 20px;
+  margin: 5px 0;
+  order: 4;
+}
+
+.boxImg {
+  padding: 5px 10px;
+}
+
+.box select {
+  background-color: var(--color-gray);
+  border-radius: 20px;
+  padding: 0 10px;
+  color: var(--color-white);
+  height: 100%;
+  border: none;
+  font-family: 'Inter-Bold';
+  text-transform: uppercase;
+  font-size: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box:hover::before {
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
   .container {
     height: auto;
     gap: 10px;
@@ -95,9 +140,20 @@
   }
 
   .logo {
+    order: 1;
     img {
       height: 30px;
     }
+  }
+
+  .box {
+    width: auto;
+    height: 30px;
+  }
+
+  .settings {
+    width: 100%;
+    order: 3;
   }
 
   .contacts {

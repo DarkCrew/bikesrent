@@ -43,7 +43,7 @@ const HowWorks = (): ReactElement => {
             </div>
             <div className={styles.step}>
               <p className={styles.number}>02</p>
-              <p className={styles.stepTitle}>Получите байк</p>
+              <p className={styles.stepTitle}>Получите велосипед</p>
               <div className={styles.stepSubTitle}>
                 <p className={styles.point}>•</p>
                 <p> Заберите байк бесплатно в точке самовывоза</p>
