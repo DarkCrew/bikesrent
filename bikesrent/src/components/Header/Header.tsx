@@ -20,6 +20,7 @@ const Header = (): ReactElement => {
   const [blackBack, setBlackBack] = React.useState('blackBack');
   const [orangeBack, setOrangeBack] = React.useState('mobileMenu');
   const [logoMobile, setLogoMobile] = React.useState('logoMobile');
+  const [languageBtn, setLanguageBtn] = React.useState('box');
 
   const scrollTop = (): void => {
     window.scrollTo(0, 0);
@@ -40,6 +41,7 @@ const Header = (): ReactElement => {
     blackBack === 'blackBack' ? setBlackBack('blackBack active') : setBlackBack('blackBack');
     orangeBack === 'mobileMenu' ? setOrangeBack('mobileMenu active') : setOrangeBack('mobileMenu');
     logoMobile === 'logoMobile' ? setLogoMobile('logoMobile active') : setLogoMobile('logoMobile');
+    languageBtn === 'box' ? setLanguageBtn('box active') : setLanguageBtn('box');
   };
 
   const clickMobileLogo = (): void => {
@@ -102,23 +104,21 @@ const Header = (): ReactElement => {
             </div>
           </div>
           <div className={blackBack} />
-          <div className={styles.settings}>
-            <div className={styles.contacts}>
-              <button type="button" className={styles.contactsBtn}>
-                портал клиента
-              </button>
-              <a href="tel:+48888768666">
-                <img className={styles.contactsPhone} src={phone} alt="phone" />
-              </a>
-            </div>
-            <div className={styles.box}>
-              <img className={styles.boxImg} src={languageImage} alt="language" />
-              <select>
-                <option>En</option>
-                <option>Ru</option>
-                <option>Pl</option>
-              </select>
-            </div>
+          <div className={styles.contacts}>
+            <button type="button" className={styles.contactsBtn}>
+              портал клиента
+            </button>
+            <a href="tel:+48888768666">
+              <img className={styles.contactsPhone} src={phone} alt="phone" />
+            </a>
+          </div>
+          <div className={languageBtn}>
+            <img className="boxImg" src={languageImage} alt="language" />
+            <select>
+              <option>En</option>
+              <option>Ru</option>
+              <option>Pl</option>
+            </select>
           </div>
           <div className="burgerMenu" onClick={changeBurgerStatus}>
             <label className="menuBtn">

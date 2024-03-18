@@ -81,7 +81,7 @@ const Footer = (): ReactElement => {
         </div>
 
         <footer className={styles.footer}>
-          <p>© 2024 ElectricGo</p>
+          <p className={styles.dataFooter}>© 2024 ElectricGo</p>
           <p>
             <NavLink to="/politic" onClick={scrollToTop}>
               Политика конфиденциальности
