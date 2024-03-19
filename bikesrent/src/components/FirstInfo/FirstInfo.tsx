@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import courier from '../../assets/images/courier.png';
 import time from '../../assets/images/time.png';
@@ -6,15 +7,13 @@ import time from '../../assets/images/time.png';
 import styles from './FirstInfo.module.scss';
 
 const FirstInfo = (): ReactElement => {
+  const { t, i18n } = useTranslation(['home', 'main']);
+
   return (
     <div className={styles.firstInfo} id="firstInfo">
       <div className="container">
         <div className={styles.container}>
-          <h2 className={styles.title}>
-            Аренда
-            <br /> электро
-            <br /> велосипедов
-          </h2>
+          <h2 className={styles.title}>{t('firstInfoTitle', { ns: ['main', 'home'] })}</h2>
           <div className={styles.descriptions}>
             <div className={styles.description}>
               <img src={time} alt="time" />
@@ -34,7 +33,7 @@ const FirstInfo = (): ReactElement => {
           </div>
           <div className={styles.buttons}>
             <button className={styles.buttonRegistration} type="button">
-              Регистрация
+              {t('btnRegistration', { ns: ['main', 'home'] })}
             </button>
             <button className={styles.buttonCheck} type="button">
               смотреть каталог

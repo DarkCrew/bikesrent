@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -5,6 +7,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { ReactElement } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import i18n from 'i18n';
 
 import languageImage from '../../assets/images/language.png';
 import logo from '../../assets/images/logo.png';
@@ -47,6 +50,11 @@ const Header = (): ReactElement => {
   const clickMobileLogo = (): void => {
     scrollTop();
     changeBurgerStatus();
+  };
+
+  const onClickLanguageChange = (e: any) => {
+    const language = e.target.value;
+    i18n.changeLanguage(language); // change the language
   };
 
   return (
@@ -114,10 +122,10 @@ const Header = (): ReactElement => {
           </div>
           <div className={languageBtn}>
             <img className="boxImg" src={languageImage} alt="language" />
-            <select>
-              <option>En</option>
-              <option>Ru</option>
-              <option>Pl</option>
+            <select onChange={onClickLanguageChange}>
+              <option value="en">En</option>
+              <option value="ru">Ru</option>
+              <option value="pl">Pl</option>
             </select>
           </div>
           <div className="burgerMenu" onClick={changeBurgerStatus}>
