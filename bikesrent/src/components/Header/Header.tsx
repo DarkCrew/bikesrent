@@ -6,6 +6,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router-dom';
 import i18n from 'i18n';
 
@@ -18,6 +19,8 @@ import './Header.css';
 import styles from './Header.module.scss';
 
 const Header = (): ReactElement => {
+  const { t } = useTranslation(['home', 'main']);
+
   const [burgerStatus, setBurgerStatus] = React.useState('menuIcon');
   const [menuStatus, setMenuStatus] = React.useState('menu');
   const [blackBack, setBlackBack] = React.useState('blackBack');
@@ -72,31 +75,31 @@ const Header = (): ReactElement => {
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
                 <a className={styles.linksMenu} href="/#service">
-                  О сервисе
+                  {t('headerService', { ns: ['main', 'home'] })}
                 </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
                 <a className={styles.linksMenu} href="/#advantages">
-                  Аренда
+                  {t('headerRent', { ns: ['main', 'home'] })}
                 </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
                 <a className={styles.linksMenu} href="/#bikes">
-                  Наши велосипеды
+                  {t('headerBikes', { ns: ['main', 'home'] })}
                 </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
                 <a className={styles.linksMenu} href="/#question">
-                  Вопрос-ответ
+                  {t('headerQuestion', { ns: ['main', 'home'] })}
                 </a>
               </li>
               <li className={styles.li} onClick={changeBurgerStatus}>
                 <span className={styles.point}>•</span>
                 <a className={styles.linksMenu} href="/#contacts">
-                  Контакты
+                  {t('headerContact', { ns: ['main', 'home'] })}
                 </a>
               </li>
             </ul>
@@ -105,7 +108,7 @@ const Header = (): ReactElement => {
                 <a href="tel:+48888768666">+48 888 768 666</a>
                 <p>biuro@electricgo.pl</p>
               </p>
-              <div className={styles.cityHeader}>Warszawa</div>
+              <div className={styles.cityHeader}>{t('headerCity', { ns: ['main', 'home'] })}</div>
               <div className={styles.messangersHeader}>
                 <img src={telegram} alt="telegram" />
               </div>
@@ -114,7 +117,7 @@ const Header = (): ReactElement => {
           <div className={blackBack} />
           <div className={styles.contacts}>
             <button type="button" className={styles.contactsBtn}>
-              портал клиента
+              {t('headerPortal', { ns: ['main', 'home'] })}
             </button>
             <a href="tel:+48888768666">
               <img className={styles.contactsPhone} src={phone} alt="phone" />

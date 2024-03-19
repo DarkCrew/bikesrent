@@ -3,6 +3,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-undef */
 import React, { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import bike from '../../assets/images/bikeWork.png';
@@ -12,6 +13,8 @@ import telegram from '../../assets/images/telegram.png';
 import styles from './Footer.module.scss';
 
 const Footer = (): ReactElement => {
+  const { t } = useTranslation(['home', 'main']);
+
   const scrollToTop = (): void => {
     window.scrollTo(0, 0);
   };
@@ -26,19 +29,19 @@ const Footer = (): ReactElement => {
           </div>
           <ul className={styles.menu}>
             <li className="li">
-              <a href="/#service">О сервисе</a>
+              <a href="/#service">{t('footerMenu1', { ns: ['main', 'home'] })}</a>
             </li>
             <li className="li">
-              <a href="/#advantages">Аренда</a>
+              <a href="/#advantages">{t('footerMenu2', { ns: ['main', 'home'] })}</a>
             </li>
             <li className="li">
-              <a href="/#bikes">Наши велосипеды</a>
+              <a href="/#bikes">{t('footerMenu3', { ns: ['main', 'home'] })}</a>
             </li>
             <li className="li">
-              <a href="/#question">Вопрос-ответ</a>
+              <a href="/#question">{t('footerMenu4', { ns: ['main', 'home'] })}</a>
             </li>
             <li className="li">
-              <a href="/#contacts">Контакты</a>
+              <a href="/#contacts">{t('footerMenu5', { ns: ['main', 'home'] })}</a>
             </li>
           </ul>
         </div>
@@ -47,7 +50,7 @@ const Footer = (): ReactElement => {
             <a href="tel:+48888768666">+48 888 768 666</a>
             <p>biuro@electricgo.pl</p>
           </p>
-          <div className={styles.city}>Warszawa</div>
+          <div className={styles.city}>{t('footerCity', { ns: ['main', 'home'] })}</div>
           <a
             target="_blank"
             href="https://maps.app.goo.gl/TnzAMvx3qTjLAxw87"
@@ -84,17 +87,17 @@ const Footer = (): ReactElement => {
           <p className={styles.dataFooter}>© 2024 ElectricGo</p>
           <p>
             <NavLink to="/politic" onClick={scrollToTop}>
-              Политика конфиденциальности
+              {t('footerPolitic', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
           <p>
             <NavLink to="/offer" onClick={scrollToTop}>
-              Оферта
+              {t('footerOffer', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
           <p>
             <NavLink to="/agreement" onClick={scrollToTop}>
-              Договор
+              {t('footerAgreement', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
         </footer>

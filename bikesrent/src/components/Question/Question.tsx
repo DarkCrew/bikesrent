@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import bike from '../../assets/images/bikeWork.png';
 
@@ -11,6 +12,8 @@ import './Question.css';
 import styles from './Question.module.scss';
 
 const Question = (): ReactElement => {
+  const { t } = useTranslation(['home', 'main']);
+
   const [currentInfo, setCurrentInfo] = React.useState(0);
 
   const changeDescriptionStatus = (info: number): void => {
@@ -27,11 +30,8 @@ const Question = (): ReactElement => {
         <div className={styles.container}>
           <div className={styles.orangeLine} />
           <div className={styles.title}>
-            <h3 className={styles.titleFirst}>подробности</h3>
-            <h3 className={styles.titleSecond}>
-              вопрос —
-              <br /> ответ
-            </h3>
+            <h3 className={styles.titleFirst}>{t('questionTitle1', { ns: ['main', 'home'] })}</h3>
+            <h3 className={styles.titleSecond}>{t('questionTitle1', { ns: ['main', 'home'] })}</h3>
           </div>
           <div className={styles.imgBike}>
             <img src={bike} alt="bike" />
@@ -40,7 +40,9 @@ const Question = (): ReactElement => {
             <div className={styles.step}>
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
-                  <p className={styles.stepQuestion}>Как работает подписка</p>
+                  <p className={styles.stepQuestion}>
+                    {t('questionStep1', { ns: ['main', 'home'] })}
+                  </p>
                   <div
                     className={currentInfo === 1 ? 'plusBtnContainer active' : 'plusBtnContainer'}
                     onClick={() => changeDescriptionStatus(1)}
@@ -51,18 +53,14 @@ const Question = (): ReactElement => {
                   </div>
                 </div>
                 <p className={currentInfo === 1 ? styles.description : styles.descriptionOff}>
-                  Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
-                  следуйте дальнейшим инструкциям (будет ссылка). Вы можете оформить подписку прямо
-                  у нас на сайте. Просто перейдите по ссылке и следуйте дальнейшим инструкциям
-                  (будет ссылка).
+                  {t('questionStepDescription1', { ns: ['main', 'home'] })}
                 </p>
               </div>
 
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
                   <p className={styles.stepQuestion}>
-                    Как мне оформить
-                    <br /> подписку?
+                    {t('questionStep2', { ns: ['main', 'home'] })}
                   </p>
                   <div
                     className={currentInfo === 2 ? 'plusBtnContainer active' : 'plusBtnContainer'}
@@ -74,16 +72,14 @@ const Question = (): ReactElement => {
                   </div>
                 </div>
                 <p className={currentInfo === 2 ? styles.description : styles.descriptionOff}>
-                  Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
-                  следуйте дальнейшим инструкциям (будет ссылка).
+                  {t('questionStepDescription2', { ns: ['main', 'home'] })}
                 </p>
               </div>
 
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
                   <p className={styles.stepQuestion}>
-                    Кто может оформить
-                    <br /> подписку?
+                    {t('questionStep3', { ns: ['main', 'home'] })}
                   </p>
                   <div
                     className={currentInfo === 3 ? 'plusBtnContainer active' : 'plusBtnContainer'}
@@ -95,14 +91,15 @@ const Question = (): ReactElement => {
                   </div>
                 </div>
                 <p className={currentInfo === 3 ? styles.description : styles.descriptionOff}>
-                  Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
-                  следуйте дальнейшим инструкциям (будет ссылка).
+                  {t('questionStepDescription3', { ns: ['main', 'home'] })}
                 </p>
               </div>
 
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
-                  <p className={styles.stepQuestion}>Что входит в подписку?</p>
+                  <p className={styles.stepQuestion}>
+                    {t('questionStep4', { ns: ['main', 'home'] })}
+                  </p>
                   <div
                     className={currentInfo === 4 ? 'plusBtnContainer active' : 'plusBtnContainer'}
                     onClick={() => changeDescriptionStatus(4)}
@@ -113,17 +110,14 @@ const Question = (): ReactElement => {
                   </div>
                 </div>
                 <p className={currentInfo === 4 ? styles.description : styles.descriptionOff}>
-                  Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
-                  следуйте дальнейшим инструкциям (будет ссылка).
+                  {t('questionStepDescription4', { ns: ['main', 'home'] })}
                 </p>
               </div>
 
               <div className={styles.stepTitle}>
                 <div className={styles.mainQuestion}>
                   <p className={styles.stepQuestion}>
-                    Какие документы
-                    <br /> необходимы для
-                    <br /> оформления?
+                    {t('questionStep5', { ns: ['main', 'home'] })}
                   </p>
                   <div
                     className={currentInfo === 5 ? 'plusBtnContainer active' : 'plusBtnContainer'}
@@ -135,8 +129,7 @@ const Question = (): ReactElement => {
                   </div>
                 </div>
                 <p className={currentInfo === 5 ? styles.description : styles.descriptionOff}>
-                  Вы можете оформить подписку прямо у нас на сайте. Просто перейдите по ссылке и
-                  следуйте дальнейшим инструкциям (будет ссылка).
+                  {t('questionStepDescription5', { ns: ['main', 'home'] })}
                 </p>
               </div>
             </div>

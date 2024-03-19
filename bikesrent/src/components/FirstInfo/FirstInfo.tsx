@@ -7,7 +7,7 @@ import time from '../../assets/images/time.png';
 import styles from './FirstInfo.module.scss';
 
 const FirstInfo = (): ReactElement => {
-  const { t, i18n } = useTranslation(['home', 'main']);
+  const { t } = useTranslation(['home', 'main']);
 
   return (
     <div className={styles.firstInfo} id="firstInfo">
@@ -17,26 +17,19 @@ const FirstInfo = (): ReactElement => {
           <div className={styles.descriptions}>
             <div className={styles.description}>
               <img src={time} alt="time" />
-              <p>
-                Сервис долгосрочной
-                <br /> аренды электровелосипедов{' '}
-              </p>
+              <p>{t('firstInfoDescription1', { ns: ['main', 'home'] })}</p>
             </div>
             <div className={styles.description}>
               <img src={courier} alt="courier" />
-              <p>
-                Для курьеров, владельцев
-                <br /> бизнеса и любителей
-                <br /> покататься{' '}
-              </p>
+              <p>{t('firstInfoDescription2', { ns: ['main', 'home'] })}</p>
             </div>
           </div>
           <div className={styles.buttons}>
             <button className={styles.buttonRegistration} type="button">
-              {t('btnRegistration', { ns: ['main', 'home'] })}
+              {t('firstInfoBtnRegistration', { ns: ['main', 'home'] })}
             </button>
             <button className={styles.buttonCheck} type="button">
-              смотреть каталог
+              {t('firstInfoBtnCatalog', { ns: ['main', 'home'] })}
             </button>
           </div>
         </div>
