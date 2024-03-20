@@ -31,7 +31,7 @@ const Bikes = (): ReactElement => {
               </div>
               <div className={styles.btnContainer}>
                 <a
-                  href="https://electricgo.chargebee.com/pages/v3/4FPCbYNPw8ceIw48J1G3tu5gwqB26Ejo/check_user"
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=rower1-PLN-Weekly&subscription_items[quantity][0]=1&layout=in_app"
                   target="_blank"
                   className={styles.btnReservation}
                   type="button"

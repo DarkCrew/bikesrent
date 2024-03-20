@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 import { initReactI18next } from 'react-i18next';
 import i18next from 'i18next';
 
@@ -33,9 +34,14 @@ const resources = {
   },
 };
 
+let currentLanguage = 'pl';
+if (localStorage.getItem('language') === 'ru' || 'pl' || 'en') {
+  currentLanguage = localStorage.getItem('language') as string;
+}
+
 i18next.use(initReactI18next).init({
   resources,
-  lng: 'pl', // default language
+  lng: currentLanguage, // default language
 });
 
 export default i18next;

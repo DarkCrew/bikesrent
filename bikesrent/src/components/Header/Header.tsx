@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
@@ -7,7 +8,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import i18n from 'i18n';
 
 import languageImage from '../../assets/images/language.png';
@@ -28,7 +29,17 @@ const Header = (): ReactElement => {
   const [logoMobile, setLogoMobile] = React.useState('logoMobile');
   const [languageBtn, setLanguageBtn] = React.useState('box');
 
+  const [currentLanguage, setCurrentLanguage] = React.useState('pl');
+
   React.useEffect(() => {}, [burgerStatus]);
+  React.useEffect(() => {
+    if (localStorage.getItem('language') !== null) {
+      if (localStorage.getItem('language') === 'ru' || 'pl' || 'en') {
+        const localLanguage = localStorage.getItem('language') as string;
+        setCurrentLanguage(localLanguage);
+      }
+    }
+  }, []);
 
   const scrollTop = (): void => {
     window.scrollTo(0, 0);
@@ -63,7 +74,9 @@ const Header = (): ReactElement => {
 
   const onClickLanguageChange = (e: any) => {
     const language = e.target.value;
+    localStorage.setItem('language', language);
     i18n.changeLanguage(language); // change the language
+    setCurrentLanguage(language);
   };
 
   return (
@@ -137,7 +150,7 @@ const Header = (): ReactElement => {
           </div>
           <div className={languageBtn}>
             <img className="boxImg" src={languageImage} alt="language" />
-            <select onChange={onClickLanguageChange}>
+            <select value={currentLanguage} onChange={onClickLanguageChange}>
               <option value="pl">Pl</option>
               <option value="en">En</option>
               <option value="ru">Ru</option>
