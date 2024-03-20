@@ -107,6 +107,9 @@
 }
 
 .boxImg {
+  height: 40px;
+  width: 50px;
+  object-fit: contain;
   padding: 5px 10px;
 }
 
@@ -159,10 +162,13 @@
   }
 
   .box select {
-    padding: 0 5px;
+    padding: 0;
   }
 
   .boxImg {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
     padding: 5px;
   }
 

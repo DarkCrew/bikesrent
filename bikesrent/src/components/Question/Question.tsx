@@ -31,7 +31,7 @@ const Question = (): ReactElement => {
           <div className={styles.orangeLine} />
           <div className={styles.title}>
             <h3 className={styles.titleFirst}>{t('questionTitle1', { ns: ['main', 'home'] })}</h3>
-            <h3 className={styles.titleSecond}>{t('questionTitle1', { ns: ['main', 'home'] })}</h3>
+            <h3 className={styles.titleSecond}>{t('questionTitle2', { ns: ['main', 'home'] })}</h3>
           </div>
           <div className={styles.imgBike}>
             <img src={bike} alt="bike" />

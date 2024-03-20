@@ -74,7 +74,7 @@ const Footer = (): ReactElement => {
         <div className={styles.maps}>
           <div className={styles.mapsContainer}>
             <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1qZiXQLXGKlagDQ6lxJjguPMp1donE4o&ehbc=2E312F&noprof=1"
+              src="https://www.google.com/maps/d/u/8/embed?mid=1FX8rRC4EeRN8lAGRZyamv1RpgWC2QNc&ehbc=2E312F&noprof=1"
               className={styles.mapGoogle}
               style={{ border: '0' }}
               loading="lazy"

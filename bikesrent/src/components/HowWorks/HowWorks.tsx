@@ -19,8 +19,8 @@ const HowWorks = (): ReactElement => {
               {t('worksTitleSecond', { ns: ['main', 'home'] })}
             </h3>
           </div>
-          <div className={styles.imgBike}>
-            <img src={bike} alt="bike" />
+          <div className={styles.imgBikeContainer}>
+            <img className={styles.imgBike} src={bike} alt="bike" />
           </div>
           <div className={styles.steps}>
             <div className={styles.step}>

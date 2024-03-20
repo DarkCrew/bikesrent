@@ -28,6 +28,8 @@ const Header = (): ReactElement => {
   const [logoMobile, setLogoMobile] = React.useState('logoMobile');
   const [languageBtn, setLanguageBtn] = React.useState('box');
 
+  React.useEffect(() => {}, [burgerStatus]);
+
   const scrollTop = (): void => {
     window.scrollTo(0, 0);
   };
@@ -42,6 +44,10 @@ const Header = (): ReactElement => {
   }, []);
 
   const changeBurgerStatus = (): void => {
+    if (window.innerWidth <= 768) {
+      document.body.style.overflow = document.body.style.overflow === '' ? 'hidden' : '';
+    }
+
     burgerStatus === 'menuIcon' ? setBurgerStatus('menuIcon active') : setBurgerStatus('menuIcon');
     menuStatus === 'menu' ? setMenuStatus('menu active') : setMenuStatus('menu');
     blackBack === 'blackBack' ? setBlackBack('blackBack active') : setBlackBack('blackBack');
@@ -116,9 +122,15 @@ const Header = (): ReactElement => {
           </div>
           <div className={blackBack} />
           <div className={styles.contacts}>
-            <button type="button" className={styles.contactsBtn}>
+            <a
+              href="https://electricgo.chargebeeportal.com/portal/v2/login?forward=portal_main"
+              target="_blank"
+              type="button"
+              className={styles.contactsBtn}
+              rel="noreferrer"
+            >
               {t('headerPortal', { ns: ['main', 'home'] })}
-            </button>
+            </a>
             <a href="tel:+48888768666">
               <img className={styles.contactsPhone} src={phone} alt="phone" />
             </a>
@@ -126,9 +138,9 @@ const Header = (): ReactElement => {
           <div className={languageBtn}>
             <img className="boxImg" src={languageImage} alt="language" />
             <select onChange={onClickLanguageChange}>
+              <option value="pl">Pl</option>
               <option value="en">En</option>
               <option value="ru">Ru</option>
-              <option value="pl">Pl</option>
             </select>
           </div>
           <div className="burgerMenu" onClick={changeBurgerStatus}>

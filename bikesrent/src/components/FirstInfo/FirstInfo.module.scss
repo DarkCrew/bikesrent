@@ -48,6 +48,8 @@
 
 .buttonRegistration,
 .buttonCheck {
+  display: flex;
+  justify-content: center;
   min-width: 300px;
   border-radius: 50px;
   font-size: 20px;
@@ -129,7 +131,7 @@
   }
 }
 
-@media (max-width: 528px) {
+@media (max-width: 580px) {
   .title {
     font-size: 45px;
   }
@@ -139,7 +141,7 @@
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
   .title {
     font-size: 37px;
   }
@@ -149,7 +151,7 @@
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 420px) {
   .title {
     font-size: 32px;
   }
@@ -157,6 +159,6 @@
 
 @media (max-width: 350px) {
   .title {
-    font-size: 30px;
+    font-size: 28px;
   }
 }

@@ -28,9 +28,10 @@
 }
 
 .titleSecond {
+  width: 250px;
   color: var(--color-black);
   font-family: 'Inter-ExtraBold';
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -131,6 +132,10 @@
 
   .imgBike {
     margin-top: 150px;
+  }
+
+  .titleSecond {
+    font-size: 26px;
   }
 }
 

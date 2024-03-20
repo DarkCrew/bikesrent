@@ -30,9 +30,15 @@ const Bikes = (): ReactElement => {
                 <p>{t('bikesCardInfo5', { ns: ['main', 'home'] })}</p>
               </div>
               <div className={styles.btnContainer}>
-                <button className={styles.btnReservation} type="button">
+                <a
+                  href="https://electricgo.chargebee.com/pages/v3/4FPCbYNPw8ceIw48J1G3tu5gwqB26Ejo/check_user"
+                  target="_blank"
+                  className={styles.btnReservation}
+                  type="button"
+                  rel="noreferrer"
+                >
                   {t('bikesBtnReservation', { ns: ['main', 'home'] })}
-                </button>
+                </a>
               </div>
             </div>
           </div>

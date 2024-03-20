@@ -25,12 +25,12 @@ const FirstInfo = (): ReactElement => {
             </div>
           </div>
           <div className={styles.buttons}>
-            <button className={styles.buttonRegistration} type="button">
+            <a href="/#bikes" className={styles.buttonRegistration} type="button">
               {t('firstInfoBtnRegistration', { ns: ['main', 'home'] })}
-            </button>
-            <button className={styles.buttonCheck} type="button">
+            </a>
+            <a href="/#bikes" className={styles.buttonCheck} type="button">
               {t('firstInfoBtnCatalog', { ns: ['main', 'home'] })}
-            </button>
+            </a>
           </div>
         </div>
       </div>
