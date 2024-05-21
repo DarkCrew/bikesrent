@@ -6,7 +6,6 @@ import React, { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
-import bike from '../../assets/images/bikeWork.png';
 import logo from '../../assets/images/logo.png';
 import telegram from '../../assets/images/telegram.png';
 
@@ -47,8 +46,12 @@ const Footer = (): ReactElement => {
         </div>
         <div className={styles.otherInfo}>
           <p className={styles.contacts}>
-            <a href="tel:+48888768666">+48 888 768 666</a>
-            <p>biuro@electricgo.pl</p>
+            <a className={styles.contactsPhone} href="tel:+48888768666">
+              +48 888 768 666
+            </a>
+            <a className={styles.contactsMail} href="mailto:biuro@electricgo.pl">
+              biuro@electricgo.pl
+            </a>
           </p>
           <div className={styles.city}>{t('footerCity', { ns: ['main', 'home'] })}</div>
           <a
@@ -68,7 +71,14 @@ const Footer = (): ReactElement => {
             Jadźwingów 15, 02-692
           </a>
           <div className={styles.messangers}>
-            <img src={telegram} alt="telegram" />
+            <a
+              className={styles.messangersLink}
+              href="https://t.me/electricgorent"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className={styles.messangersImg} src={telegram} alt="telegram" />
+            </a>
           </div>
         </div>
         <div className={styles.maps}>
@@ -91,13 +101,13 @@ const Footer = (): ReactElement => {
             </NavLink>
           </p>
           <p>
-            <NavLink to="/offer" onClick={scrollToTop}>
-              {t('footerOffer', { ns: ['main', 'home'] })}
+            <NavLink to="/redo" onClick={scrollToTop}>
+              {t('footerRedo', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
           <p>
-            <NavLink to="/agreement" onClick={scrollToTop}>
-              {t('footerAgreement', { ns: ['main', 'home'] })}
+            <NavLink to="/regulamin" onClick={scrollToTop}>
+              {t('footerRegulamin', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
         </footer>

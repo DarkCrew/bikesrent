@@ -93,14 +93,19 @@
   margin-top: 100px;
 }
 
-.contacts,
-.contacts a {
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsPhone,
+.contactsMail {
   color: var(--color-white);
   font-family: 'Inter-ExtraBold';
   font-size: 48px;
 }
 
-.contacts p {
+.contactsMail {
   margin-top: 10px;
 }
 
@@ -122,12 +127,18 @@
 .messangers {
   margin: 50px 0;
   height: 60px;
+}
 
-  img {
-    height: 100%;
-    object-fit: contain;
-    cursor: pointer;
-  }
+.messangersLink {
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+
+.messangersImg {
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 .maps {
@@ -188,10 +199,9 @@
     }
   }
 
-  .contacts,
-  .contacts a {
+  .contactsPhone,
+  .contactsMail {
     font-size: 32px;
-    padding-top: 80px;
   }
 
   .container {
@@ -227,6 +237,11 @@
   .messangers {
     height: 35px;
     margin: 20px 0;
+  }
+
+  .messangersLink {
+    height: 35px;
+    width: 35px;
   }
 
   .otherInfo {
@@ -290,8 +305,8 @@
     padding-top: 0;
   }
 
-  .contacts,
-  .contacts a {
+  .contactsPhone,
+  .contactsMail {
     font-size: 40px;
   }
 
@@ -333,19 +348,15 @@
 }
 
 @media (max-width: 528px) {
-  .contacts {
-    p,
-    a {
-      font-size: 30px;
-    }
+  .contactsPhone,
+  .contactsMail {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 428px) {
-  .contacts {
-    p,
-    a {
-      font-size: 25px;
-    }
+  .contactsPhone,
+  .contactsMail {
+    font-size: 25px;
   }
 }

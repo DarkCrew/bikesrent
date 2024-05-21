@@ -14,8 +14,8 @@ const App = (): ReactElement => {
     <Routes>
       <Route path="" element={<HomePage />} />
       <Route path="/politic" element={<PoliticPage />} />
-      <Route path="/offer" element={<OfferPage />} />
-      <Route path="/agreement" element={<AgreementPage />} />
+      <Route path="/redo" element={<OfferPage />} />
+      <Route path="/regulamin" element={<AgreementPage />} />
     </Routes>
   );
 };

@@ -3,7 +3,44 @@
 .home {
 }
 
+p {
+  font-size: 16px;
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+}
+
+.list {
+  margin-left: 40px;
+  li {
+    padding-top: 5px;
+    list-style-type: initial;
+  }
+}
+
 .container {
   min-height: 100vh;
   padding-top: 40px;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--color-black);
+  font-family: 'Inter-Bold';
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+}
+
+.mainInfo {
+  margin-top: 40px;
+  font-size: 16px;
+  color: var(--color-black);
+  font-family: 'Inter-Regular';
+}
+
+.defenition {
+  margin-top: 20px;
 }

@@ -35,8 +35,10 @@ const resources = {
 };
 
 let currentLanguage = 'pl';
-if (localStorage.getItem('language') === 'ru' || 'pl' || 'en') {
-  currentLanguage = localStorage.getItem('language') as string;
+if (localStorage.getItem('language') !== null) {
+  if (localStorage.getItem('language') === 'ru' || 'pl' || 'en') {
+    currentLanguage = localStorage.getItem('language') as string;
+  }
 }
 
 i18next.use(initReactI18next).init({
