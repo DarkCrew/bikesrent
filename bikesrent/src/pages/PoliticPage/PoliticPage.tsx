@@ -56,8 +56,8 @@ const PoliticPage = (): ReactElement => {
                 <br />
                 By nadzorować sprawy związane z ochroną danych osobowych oraz udzielać Państwu
                 szczegółowych informacji wyznaczyliśmy inspektora ochrony danych. Jego obowiązki
-                pełni pan XXXXX. Mogą Państwo skontaktować się z inspektorem pisząc na adres
-                siedziby administratora lub drogą mailową: xxxxx.
+                pełni pan Ihar Karas. Mogą Państwo skontaktować się z inspektorem pisząc na adres
+                siedziby administratora lub drogą mailową: biuro@electricgo.pl.
               </p>
               <p className={styles.defenition}>
                 <br />

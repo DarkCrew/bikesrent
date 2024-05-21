@@ -25,7 +25,7 @@ const AgreementPage = (): ReactElement => {
               całą treścią Regulaminu.
             </p>
             <p className={styles.defenition}>
-              <b>Definicje</b>
+              <b className={styles.subtitle}>Definicje</b>
               <br /> Użyte w Regulaminie, pojęcia pisane wielką literą mają następujące znaczenie:
               <ul className={styles.list}>
                 <li>
@@ -103,7 +103,7 @@ const AgreementPage = (): ReactElement => {
             </p>
 
             <p className={styles.defenition}>
-              <b>1. Zawarcie Umowy </b>
+              <b className={styles.subtitle}>1. Zawarcie Umowy </b>
               <br />
               1.1. W ramach Umowy ElectricGo oddaje Klientowi do używania Rower na warunkach i w
               zamian za wynagrodzenie, o którym mowa w Regulaminie.
@@ -155,7 +155,7 @@ const AgreementPage = (): ReactElement => {
             </p>
 
             <p className={styles.defenition}>
-              <b>2. Warunki korzystania z Roweru</b>
+              <b className={styles.subtitle}>2. Warunki korzystania z Roweru</b>
               <br /> 2.1. ElectricGo wyda Klientowi Rower nowy lub używany, bez wad i w pełni zdatny
               do używania i dopuszczony do ruchu. ElectricGo informuje Klienta o stanie Roweru w
               pisemnym protokole wydania Roweru przekazywanym Klientowi w momencie jego wydania.
@@ -216,7 +216,7 @@ const AgreementPage = (): ReactElement => {
               których Rower ulega Uszkodzeniu lub zniszczeniu.
             </p>
             <p className={styles.defenition}>
-              <b>3. Czas obowiązywania Umowy i Wypowiedzenie </b>
+              <b className={styles.subtitle}>3. Czas obowiązywania Umowy i Wypowiedzenie </b>
               <br /> 3.1. Umowa jest zawierana na czas nieokreślony, a swój bieg rozpoczyna od dnia
               odebrania Roweru przez Klienta.
               <br /> 3.2. Moment rozpoczęcia Umowy nie może nastąpić później niż 2 dni robocze od
@@ -250,7 +250,7 @@ const AgreementPage = (): ReactElement => {
               całkowitym kosztem Roweru w wysokości 5 000 zł (pięciu tysięcy złotych).
             </p>
             <p className={styles.defenition}>
-              <b>4. Naprawa usterek / Uszkodzenia Roweru</b>
+              <b className={styles.subtitle}>4. Naprawa usterek / Uszkodzenia Roweru</b>
               <br /> 4.1. W ramach Umowy ElectricGo zobowiązuje się do obsługi i dokonywania
               niezbędnych napraw Roweru oraz prowadzenia technicznych przeglądów okresowych i
               wymiany zużytych części eksploatacyjnych na zasadach określonych w Regulaminie.
@@ -277,7 +277,7 @@ const AgreementPage = (): ReactElement => {
               miejscu wyznaczonym przez ElectricGo zgodnie z obowiązującymi cenami na dzień naprawy.
             </p>
             <p className={styles.defenition}>
-              <b>5. Zamiana Roweru </b>
+              <b className={styles.subtitle}>5. Zamiana Roweru </b>
               <br /> 5.1. Zamiana Roweru może nastąpić tylko w przypadku naprawy Usterki w
               przypadku, o którym mowa w pkt. 4.2. Regulaminu.
               <br /> 5.2. Jeśli czas realizacji zamiany nie zostanie osiągnięty, Klient nie może
@@ -286,7 +286,7 @@ const AgreementPage = (): ReactElement => {
               z całym obecnym wyposażeniem wskazanym w rozdziale Definicje.
             </p>
             <p className={styles.defenition}>
-              <b>6. Płatności</b>
+              <b className={styles.subtitle}>6. Płatności</b>
               <br /> 6.1. W celu dokonywania opłaty Abonamentu, Klient będzie zobowiązany do
               udzielenia polecenia zapłaty na numer rachunku bankowego ElectricGo, przez
               udostępnienie danych karty płatniczej w systemie płatniczym opisanym w zdaniu
@@ -330,7 +330,7 @@ const AgreementPage = (): ReactElement => {
               Administrowanie danymi które się mieszczą na Portalu Klienta dokonuje ElectricGo.
             </p>
             <p className={styles.defenition}>
-              <b>7. Kradzież Roweru</b>
+              <b className={styles.subtitle}>7. Kradzież Roweru</b>
               <br /> 7.1. Jeżeli Klient parkuje Rower, zawsze musi zabezpieczyć Rower w sposób
               określony w punktach 2.11, 2.12 Regulaminu.
               <br /> 7.2. W przypadku kradzieży Roweru i / lub baterii, Klient będzie zobowiązany
@@ -370,7 +370,7 @@ const AgreementPage = (): ReactElement => {
               biuro@electricgo.pl.
             </p>
             <p className={styles.defenition}>
-              <b>8. Odpowiedzialność</b>
+              <b className={styles.subtitle}>8. Odpowiedzialność</b>
               <br /> 8.1. ElectricGo nie ponosi odpowiedzialności za jakiekolwiek szkody lub krzywdy
               poniesione przez Klienta lub osoby trzecie w wyniku korzystania z Roweru w tym mandaty
               drogowe.
@@ -379,7 +379,7 @@ const AgreementPage = (): ReactElement => {
               Roweru.
             </p>
             <p className={styles.defenition}>
-              <b>9. Niespełnienie zobowiązań</b>
+              <b className={styles.subtitle}>9. Niespełnienie zobowiązań</b>
               <br /> 9.1. ElectricGo jest uprawniona do wypowiedzenia Umowy ze skutkiem
               natychmiastowym, w całości lub w części, jeżeli:
               <p>
@@ -442,7 +442,7 @@ const AgreementPage = (): ReactElement => {
               przez ElectricGo roszczeń na zasadach ogólnych przewyższających wysokość kary umownej.
             </p>
             <p className={styles.defenition}>
-              <b>10. Odstąpienie od Umowy</b>
+              <b className={styles.subtitle}>10. Odstąpienie od Umowy</b>
               <br /> 10.1. Klient ma prawo odstąpić od Umowy bez podawania przyczyn w terminie 14
               dni od jej zawarcia. W tym celu powinien skierować do ElectricGo, na adres e-mail:
               biuro@electricgo.pl, oświadczenie o odstąpieniu od Umowy.
@@ -462,7 +462,7 @@ const AgreementPage = (): ReactElement => {
               10.3 powyżej.
             </p>
             <p className={styles.defenition}>
-              <b>11. Reklamacje</b>
+              <b className={styles.subtitle}>11. Reklamacje</b>
               <br /> 11.1. W trakcie obowiązywania Umowy, wszelkie reklamacje dotyczące wykonywania
               Umowy należy kierować drogą mailową na adres biuro@electricgo.pl.
               <br /> 11.2. Reklamacja powinna zawierać: imię, nazwisko i adres Klienta, jak również
@@ -481,7 +481,7 @@ const AgreementPage = (): ReactElement => {
               (Stały Sąd Polubowny przy Mazowieckim Wojewódzkim Inspektorze Inspekcji Handlowej).
             </p>
             <p className={styles.defenition}>
-              <b>12. Dane osobowe </b>
+              <b className={styles.subtitle}>12. Dane osobowe </b>
               <br /> 12.1. Administratorem danych osobowych Klientów jest ElectricGo zwana dalej
               również „Administratorem”.
               <br /> 12.2. Wraz z akceptacją Regulaminu, Klient wyraża zgodę na przetwarzanie danych
@@ -489,13 +489,13 @@ const AgreementPage = (): ReactElement => {
               ochrony danych osobowych w ElectricGo.
             </p>
             <p className={styles.defenition}>
-              <b>13. Zmiany Regulaminu</b>
+              <b className={styles.subtitle}>13. Zmiany Regulaminu</b>
               <br /> 13.1. ElectricGo zastrzega sobie prawo do zmiany kosztów Abonamentu. Zmiany
               zostaną przekazane Klientowi pocztą elektroniczną co najmniej 7 dni przed datą wejścia
               w życie nowej wysokości Abonamentu.
             </p>
             <p className={styles.defenition}>
-              <b>14. Kontakt </b>
+              <b className={styles.subtitle}>14. Kontakt </b>
               <br /> 14.1. Klienci mogą kontaktować się z ElectricGo w następujący sposób:
               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14.1.1. E-mail: biuro@electricgo.pl</p>
               <p>
@@ -509,7 +509,7 @@ const AgreementPage = (): ReactElement => {
               użytkowania Roweru.
             </p>
             <p className={styles.defenition}>
-              <b>15. Program poleceń </b>
+              <b className={styles.subtitle}>15. Program poleceń </b>
               <br />
               15.1. Klient wynajmujący Rower może polecać usługę wynajmu świadczoną przez
               ElectricGo. Po zawarciu Umowy Klient otrzymuje unikalny Kod polecający, który może

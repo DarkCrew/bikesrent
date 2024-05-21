@@ -101,8 +101,8 @@ const Footer = (): ReactElement => {
             </NavLink>
           </p>
           <p>
-            <NavLink to="/redo" onClick={scrollToTop}>
-              {t('footerRedo', { ns: ['main', 'home'] })}
+            <NavLink to="/rodo" onClick={scrollToTop}>
+              {t('footerRodo', { ns: ['main', 'home'] })}
             </NavLink>
           </p>
           <p>

@@ -149,9 +149,17 @@
   .messangersHeader {
     order: 3;
     margin-top: 30px;
+  }
 
-    img {
-      height: 40px;
-    }
+  .messangersLink {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+
+  .messangersImg {
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
   }
 }

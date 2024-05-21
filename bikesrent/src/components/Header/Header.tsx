@@ -125,11 +125,18 @@ const Header = (): ReactElement => {
             <div className={styles.otherInfoHeader}>
               <p className={styles.contactsHeader}>
                 <a href="tel:+48888768666">+48 888 768 666</a>
-                <p>biuro@electricgo.pl</p>
+                <a href="mailto:biuro@electricgo.pl">biuro@electricgo.pl</a>
               </p>
               <div className={styles.cityHeader}>{t('headerCity', { ns: ['main', 'home'] })}</div>
               <div className={styles.messangersHeader}>
-                <img src={telegram} alt="telegram" />
+                <a
+                  className={styles.messangersLink}
+                  href="https://t.me/electricgorent"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img className={styles.messangersImg} src={telegram} alt="telegram" />
+                </a>
               </div>
             </div>
           </div>
