@@ -6,6 +6,8 @@ import React, { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
+import facebook from '../../assets/images/facebook.png';
+import instagram from '../../assets/images/instagram.png';
 import logo from '../../assets/images/logo.png';
 import telegram from '../../assets/images/telegram.png';
 
@@ -56,19 +58,11 @@ const Footer = (): ReactElement => {
           <div className={styles.city}>{t('footerCity', { ns: ['main', 'home'] })}</div>
           <a
             target="_blank"
-            href="https://maps.app.goo.gl/TnzAMvx3qTjLAxw87"
+            href="https://maps.app.goo.gl/PPZKNM32dnDChzD57"
             className={styles.place}
             rel="noreferrer"
           >
-            Samochodowa 9, 02-652
-          </a>
-          <a
-            target="_blank"
-            href="https://maps.app.goo.gl/XphKKAMFYywjPAk3A"
-            className={styles.place}
-            rel="noreferrer"
-          >
-            Jadźwingów 15, 02-692
+            Domaniewska 22, lokal U5, 02-672
           </a>
           <div className={styles.messangers}>
             <a
@@ -78,6 +72,22 @@ const Footer = (): ReactElement => {
               rel="noreferrer"
             >
               <img className={styles.messangersImg} src={telegram} alt="telegram" />
+            </a>
+            <a
+              className={styles.messangersLink}
+              href="https://www.instagram.com/electricgo.pl?igsh=MWFvMWhlazJkbm4wZw=="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className={styles.messangersImg} src={instagram} alt="telegram" />
+            </a>
+            <a
+              className={styles.messangersLink}
+              href="https://www.facebook.com/profile.php?id=61559667046740"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className={styles.messangersImg} src={facebook} alt="telegram" />
             </a>
           </div>
         </div>

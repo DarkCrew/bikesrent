@@ -12,6 +12,10 @@
 }
 
 .bikeCards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
   padding-top: 40px;
 }
 
@@ -51,11 +55,19 @@
   color: var(--color-white);
 }
 
-.cardSubTitle {
+.cardSubTitle1,
+.cardSubTitle2 {
   font-family: 'Inter-Bold';
-  font-size: 28px;
-  color: var(--color-blue);
+  font-size: 26px;
   padding-top: 10px;
+}
+
+.cardSubTitle1 {
+  color: var(--color-blue);
+}
+
+.cardSubTitle2 {
+  color: var(--color-orange);
 }
 
 .cardInfo {
@@ -65,6 +77,14 @@
   padding-top: 50px;
   font-family: 'Inter-Regular';
   color: var(--color-white);
+}
+
+.cardInfoItem {
+  font-family: 'Inter-Regular';
+  color: var(--color-white);
+}
+.cardInfoItem:last-child {
+  height: 56px;
 }
 
 .btnContainer {
@@ -87,6 +107,11 @@
   .bikes {
     padding-top: 80px;
   }
+
+  .cardSubTitle1,
+  .cardSubTitle2 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 728px) {
@@ -95,8 +120,8 @@
   }
 
   .bikeCards {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .bikeCard {
@@ -105,9 +130,5 @@
 
   .blackPart {
     padding: 20px;
-  }
-
-  .cardSubTitle {
-    font-size: 26px;
   }
 }

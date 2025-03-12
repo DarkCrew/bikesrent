@@ -174,10 +174,8 @@ const AgreementPage = (): ReactElement => {
               miejsca użytkowania Roweru.
               <br /> 2.6. Punkty odbioru i zwrotu rowerów zlokalizowane są pod adresami:
               <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.1. Warszawa 02-652, ul. Samochodowa 9.
-              </p>
-              <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.2. Warszawa 02-692, ul. Jadzwingów 15.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.1. Warszawa 02-672, ul. Domaniewska
+                22.
               </p>
               2.7. W zależności od sytuacji, za ustną zgodą obu stron, w określonych przypadkach
               miejsce wydania i odbioru może ulec zmianie.
