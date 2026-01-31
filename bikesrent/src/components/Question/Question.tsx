@@ -6,7 +6,7 @@
 import React, { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import bike from '../../assets/images/bikeWork.png';
+import bike from '../../assets/images/bikeWork3.png';
 
 import './Question.css';
 import styles from './Question.module.scss';

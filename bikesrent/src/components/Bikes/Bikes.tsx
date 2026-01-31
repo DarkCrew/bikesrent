@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import bike from '../../assets/images/bike.png';
 import bike2 from '../../assets/images/bike2.png';
+import bike3 from '../../assets/images/bike3.png';
 
 import styles from './Bikes.module.scss';
 
@@ -96,7 +97,7 @@ const Bikes = (): ReactElement => {
 
           <div className={styles.bikeCard}>
             <div className={styles.orangePart}>
-              <img src={bike} alt="bike" />
+              <img src={bike3} alt="bike" />
             </div>
             <div className={styles.blackPart}>
               <p className={styles.cardTitle}>{t('bikesCardTitle', { ns: ['main', 'home'] })}</p>
