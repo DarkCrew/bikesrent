@@ -36,10 +36,6 @@ const HowWorks = (): ReactElement => {
               </div>
               <div className={styles.stepSubTitle}>
                 <p className={styles.point}>•</p>
-                <p>{t('worksStepOne3', { ns: ['main', 'home'] })}</p>
-              </div>
-              <div className={styles.stepSubTitle}>
-                <p className={styles.point}>•</p>
                 <p>{t('worksStepOne4', { ns: ['main', 'home'] })}</p>
               </div>
             </div>

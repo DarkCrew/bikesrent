@@ -255,6 +255,86 @@ const Bikes = (): ReactElement => {
               </div>
             </div>
           </div>
+
+          <div className={styles.bikeCard}>
+            <div className={styles.orangePart}>
+              <img src={bike4} alt="bike" />
+            </div>
+            <div className={styles.blackPart}>
+              <p className={styles.cardTitle}>{t('bikesCardTitle3', { ns: ['main', 'home'] })}</p>
+              <p className={styles.cardSubTitle1}>
+                {t('bikesCardSubtitle7', { ns: ['main', 'home'] })}
+              </p>
+              <div className={styles.cardInfo}>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo1_2', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo2_3', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo3', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo4', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo5-3', { ns: ['main', 'home'] })}
+                </p>
+              </div>
+              <div className={styles.btnContainer}>
+                <a
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower-5-DuottsC29K-PLN-Weekly&utm_source=cb-app-copy"
+                  target="_blank"
+                  className={styles.btnReservation}
+                  type="button"
+                  rel="noreferrer"
+                >
+                  {t('bikesBtnReservation', { ns: ['main', 'home'] })}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.bikeCard}>
+            <div className={styles.orangePart}>
+              <img src={bike4} alt="bike" />
+            </div>
+            <div className={styles.blackPart}>
+              <p className={styles.cardTitle}>{t('bikesCardTitle3', { ns: ['main', 'home'] })}</p>
+              <p className={styles.cardSubTitle2}>
+                {t('bikesCardSubtitle8', { ns: ['main', 'home'] })}
+              </p>
+              <div className={styles.cardInfo}>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo1_2', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo2_3', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo3', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo4', { ns: ['main', 'home'] })}
+                </p>
+                <p className={styles.cardInfoItem}>
+                  {t('bikesCardInfo5-3', { ns: ['main', 'home'] })}
+                </p>
+              </div>
+              <div className={styles.btnContainer}>
+                <a
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower_Month5-PLN-Monthly&utm_source=cb-app-copy"
+                  target="_blank"
+                  className={styles.btnReservation}
+                  type="button"
+                  rel="noreferrer"
+                >
+                  {t('bikesBtnReservation', { ns: ['main', 'home'] })}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
