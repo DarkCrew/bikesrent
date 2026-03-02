@@ -124,7 +124,7 @@ const Bikes = (): ReactElement => {
               </div>
               <div className={styles.btnContainer}>
                 <a
-                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=rower1-PLN-Weekly&subscription_items[quantity][0]=1&layout=in_app"
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=rower4-Engwe-PLN-Weekly&utm_source=cb-app-copy"
                   target="_blank"
                   className={styles.btnReservation}
                   type="button"
@@ -164,7 +164,7 @@ const Bikes = (): ReactElement => {
               </div>
               <div className={styles.btnContainer}>
                 <a
-                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower-Month-PLN-Monthly&utm_source=cb-app-copy"
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower_Month4-PLN-Monthly&utm_source=cb-app-copy"
                   target="_blank"
                   className={styles.btnReservation}
                   type="button"
@@ -204,7 +204,7 @@ const Bikes = (): ReactElement => {
               </div>
               <div className={styles.btnContainer}>
                 <a
-                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=rower1-PLN-Weekly&subscription_items[quantity][0]=1&layout=in_app"
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower-3-Juliet-PLN-Weekly&utm_source=cb-app-copy"
                   target="_blank"
                   className={styles.btnReservation}
                   type="button"
@@ -244,7 +244,7 @@ const Bikes = (): ReactElement => {
               </div>
               <div className={styles.btnContainer}>
                 <a
-                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower-Month-PLN-Monthly&utm_source=cb-app-copy"
+                  href="https://electricgo.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=Rower_Month3-PLN-Monthly&utm_source=cb-app-copy"
                   target="_blank"
                   className={styles.btnReservation}
                   type="button"
